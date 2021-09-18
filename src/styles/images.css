@@ -10,18 +10,15 @@
   /* Create four equal columns that sits next to each other */
   .image-column {
     border: 2px solid magenta;
-
   }
   
   .image-column img {
     border: 2px solid blue;
     margin-top: 8px;
-    vertical-align: top;
-    width: 100%;
+    vertical-align:middle;
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-    height: 25%;
   }
   .image-column img:hover {
     transform: scale(1.1);
