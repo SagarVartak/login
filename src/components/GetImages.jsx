@@ -27,7 +27,7 @@ const fetchItems =async()=>{
 
    const images =  fetch("https://api.imagekit.io/v1/files", {
         headers: new Headers({
-             "Authorization": 'Basic' + encode("private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE="+":"+"Sagar@992370"),
+             "Authorization": 'Basic' + encode("private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=:Sagar@992370"),
              'Content-Type': 'application/json',
              'Access-Control-Allow-Origin': '*'
         }),
