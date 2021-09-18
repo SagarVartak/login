@@ -1,0 +1,99 @@
+ .image-row {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 4px;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .image-column {
+    border: 2px solid magenta;
+
+  }
+  
+  .image-column img {
+    border: 2px solid blue;
+    margin-top: 8px;
+    vertical-align: top;
+    width: 100%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    height: 25%;
+  }
+  .image-column img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  .image-column a:hover img {
+    border: 10px solid blueviolet;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+    .image-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 600px) {
+    .image-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } 
+
+  /* .image-column {
+    border: 2px solid magenta;
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+.image-column:hover .image-column img {
+    filter: grayscale(0);
+}
+.image-column img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 25%;
+    flex-wrap: wrap;
+}
+.image-column a {
+    margin: 2px;
+    overflow: hidden;
+}
+.image-column a:hover .image-column img {
+    filter: grayscale(1);
+}
+.image-column a:hover .image-column caption {
+    opacity: 1;
+}
+
+.image-column img {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    height: 100%;
+}
+.image-column img:hover {
+    transform: scale(1.1);
+}
+.image-column caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+} */

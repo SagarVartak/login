@@ -9,7 +9,6 @@ const config = {
   appId: "1:192653787029:web:2fd79f944b23fe8c0c009c",
   measurementId: "G-5YX0QDN2K4",
   databaseURL: "https://login-signup-b1207.firebaseio.app",
-  storageBucket: "bucket.appspot.com"
 };
 
 const fire = firebase.initializeApp(config);

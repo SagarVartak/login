@@ -97,7 +97,7 @@ class login extends Component {
     <main class="form-signin">
     {errNotification}
       <form>
-        <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"/>
+        <img class="mb-4" src={"../logo.svg"} alt="" width="72" height="57"/>
         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     
         <div class="form-floating">

@@ -2,7 +2,7 @@ import "./App.css";
 import fire from "./config/fire";
 import React, { Component } from "react";
 // import LoginRegister from "./components/LoginRegister";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Login from "./components/Login";
 
 export default class App extends Component {
