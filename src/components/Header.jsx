@@ -14,31 +14,31 @@ class Header extends Component {
         
                   <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-capitalize">
                     <li>
-                      <a href="#" class="nav-link text-secondary">
+                      <a href="/home" class="nav-link text-secondary">
                         <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlinkHref="#home"/></svg>
                         Home
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="/dashboard" class="nav-link text-white">
                         <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlinkHref="#speedometer2"/></svg>
                         Dashboard
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="/orders" class="nav-link text-white">
                         <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlinkHref="#table"/></svg>
                         Orders
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="/products" class="nav-link text-white">
                         <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlinkHref="#grid"/></svg>
                         Products
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="/customers" class="nav-link text-white">
                         <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlinkHref="#people-circle"/></svg>
                         Customers
                       </a>
