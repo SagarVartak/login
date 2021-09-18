@@ -1,7 +1,7 @@
 import { useEffect,useState } from "react";
 import React from 'react';
 import "../styles/images.css"
-import {encode} from "base-64";
+// import {encode} from "base-64";
 import axios from "axios";
 
 export default function GetImages() {
@@ -58,7 +58,7 @@ const fetchItems =async()=>{
         console.log(err);
     })
 
-
+    console.log(images);
 }
 
     return (
