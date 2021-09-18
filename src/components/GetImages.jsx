@@ -2,6 +2,7 @@ import { useEffect,useState } from "react";
 import React from 'react';
 import "../styles/images.css"
 import {encode} from "base-64";
+import axios from "axios";
 
 export default function GetImages() {
     
@@ -25,20 +26,38 @@ const fetchItems =async()=>{
 
     setItems(items);
 
-   const images = await fetch("https://api.imagekit.io/v1/files", {
-        headers: new Headers({
-             "Authorization": 'Basic' + encode("private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=:Sagar@992370"),
-             'Content-Type': 'application/json',
-             'Access-Control-Allow-Origin': '*'
-        }),
-    }).then(response => {
-    if (!response.ok) throw new Error(response.status);
-        return response.json();
+//    const images = await fetch("https://api.imagekit.io/v1/files", {
+//        method: 'GET',
+//         headers: {
+//              "Authorization": 'Basic' + encode("private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=:Sagar@992370"),
+//              'Content-Type': 'application/json',
+//              'Access-Control-Allow-Origin': '*',
+                // "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+                 
+//         },
+//     }).then(response => {
+//         console.log("response",response);
+//         return response.json();
+//     }).catch(err => {
+//         console.log(err);
+//         return err;
+//     })
+//     console.log(images);
+
+    const images = await axios.get("https://api.imagekit.io/v1/files",{
+        auth:{
+            username:"private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=",
+            password:"Sagar@992370"
+        },
+        headers: {
+                    'Content-Type': 'application/json',
+                 }
+    }).then(res => {
+        console.log(res);
     }).catch(err => {
         console.log(err);
-        return err;
     })
-    console.log(images);
+
 
 }
 
