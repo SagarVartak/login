@@ -18,14 +18,14 @@ const fetchItems =async()=>{
 
     const data =await fetch("https://raw.githubusercontent.com/SagarVartak/jsondata/main/images.json");
 
-    console.log(data);
+    // console.log(data);
 
     const items=await data.json();
     // console.log(items);
 
     setItems(items);
 
-   const images =  fetch("https://api.imagekit.io/v1/files", {
+   const images = await fetch("https://api.imagekit.io/v1/files", {
         headers: new Headers({
              "Authorization": 'Basic' + encode("private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=:Sagar@992370"),
              'Content-Type': 'application/json',
