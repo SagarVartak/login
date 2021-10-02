@@ -3,7 +3,7 @@ import fire from "./config/fire";
 import React, { Component } from "react";
 // import LoginRegister from "./components/LoginRegister";
 import Home from "./pages/Home";
-import Login from "./components/Login";
+// import Login from "./components/Login";
 
 export default class App extends Component {
   constructor() {
@@ -25,6 +25,7 @@ export default class App extends Component {
     });
   }
   render() {
-    return <div>{this.state.user ? <Home /> : <Login />}</div>;
+    return <div><Home/></div>;
+    // {this.state.user ? <Home /> : <Login />}
   }
 }

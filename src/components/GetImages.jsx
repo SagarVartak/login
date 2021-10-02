@@ -16,16 +16,9 @@ export default function GetImages() {
 const [image,setImage]=useState([]);
 
 const fetchItems =async()=>{
-
-    const newdata = await axios.get("https://api.imagekit.io/v1/files",{
-        auth:{
-            username:"private_FEQHGrJPnn7Nl/Ymv+UByhUB4jE=",
-            password:"Sagar@992370"
-        },
-        headers: {
-                    'Content-Type': 'application/json',
-                 }
-    }).then(res => {
+    //http://localhost:3000/data
+    const newdata = await axios.get("https://image-kit-server.herokuapp.com/data")//https://image-kit-server.herokuapp.com/data
+    .then(res => {
         console.log("respone",res);
         return res.data;
     }).catch(err => {
@@ -33,10 +26,12 @@ const fetchItems =async()=>{
     })
 
     console.log("images",newdata);
-    const image = await newdata;
+    const image = newdata;
     setImage(image);
 
 }
+
+
 
     return (
         <div>
